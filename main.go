@@ -14,7 +14,7 @@ import (
 
 func main() {
 	// log.Printf("informer app started")
-	// os.Setenv("KUBECONFIG", "/home/rajib/.kube/config")
+
 	kubeconfig := os.Getenv("KUBECONFIG")
 
 	config, err := clientcmd.BuildConfigFromFlags("", kubeconfig)
